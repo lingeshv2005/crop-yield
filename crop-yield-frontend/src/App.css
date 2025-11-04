@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e1f5c4, #c8e6c9);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* 🧾 Form Styling */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #388e3c;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.input-with-unit {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.input-with-unit input {
+  width: 100%;
+  padding: 10px 100px 10px 10px; /* space for unit */
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.input-with-unit input:focus {
+  border-color: #43a047;
+  outline: none;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+.unit {
+  position: absolute;
+  right: 10px;
+  color: #2e7d32;
+  font-size: 0.9rem;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* 🌱 Submit Button */
+.submit-btn {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #388e3c;
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* 🌾 Result Card */
+.result-card {
+  margin-top: 25px;
+  background: #e8f5e9;
+  border: 2px solid #c8e6c9;
+  border-radius: 12px;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-card h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.result-card p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
